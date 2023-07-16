@@ -2,12 +2,12 @@
  * Resume/CV template created with Bootstrap 5 by @vmoratog and @jdnichollsc
  */
 const resume = {
-  firstName: 'Juan David',
-  lastName: 'Nicholls',
-  jobTitle: 'Full Stack Developer, Open Source Contributor',
-  city: 'Medellin',
-  postalCode: '050023',
-  country: 'Colombia',
+  firstName: 'Matt',
+  lastName: 'Gourd',
+  jobTitle: 'Senior Technical Writer',
+  city: 'London',
+  postalCode: 'N2',
+  country: 'UK',
   phone: '+573113101122',
   email: 'jdnichollsc@hotmail.com',
   education: [
@@ -56,8 +56,7 @@ const resume = {
     'MongoDB'
   ],
   languages: ['English', 'Spanish'],
-  professionalSummary: `Developer with a background in web, mobile and game development, having 10+ years of practice with a passion for open-source projects and a commitment to delivering optimal solutions.
-    Great enthusiastic teamwork, considered helpful, creative, assertive and cautious.`,
+  professionalSummary: `Full Stack Developer and Open Source Contributor with 10+ years of experience in web, mobile and game development. Passionate about driving innovation and delivering optimal solutions with a commitment to OSS and UX. Experienced in multiple business domains; Social Networks, Healthcare, Delivery, Consulting, Retail, E-commerce, Blockchain and Information Technology.`,
   employmentHistory: [
     {
       jobTitle: 'Tech Lead / Full-Stack Developer',
