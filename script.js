@@ -8,136 +8,117 @@ const resume = {
   city: 'London',
   postalCode: 'N2',
   country: 'UK',
-  phone: '+573113101122',
-  email: 'jdnichollsc@hotmail.com',
+  phone: '(+44)7498719486',
+  email: 'mattgourd@gmail.com',
   education: [
     {
-      school: 'Universidad de Medellín',
-      degree: 'Bachelor',
-      graduationDate: '2016',
-      description: 'Software Engineering'
+      school: 'University of Wales',
+      degree: 'BSc',
+      graduationDate: '1995',
+      description: 'Technology Management'
     }
   ],
   links: [
     {
       label: 'GitHub',
-      link: 'https://github.com/jdnichollsc'
+      link: 'https://github.com/matthewrgourd'
     },
     {
       label: 'LinkedIn',
-      link: 'https://linkedin.com/in/jdnichollsc'
-    },
-    {
-      label: 'Website',
-      link: 'https://bio.link/jdnichollsc'
-    },
-    {
-      label: 'Side projects',
-      link: 'https://github.com/proyecto26'
+      link: 'https://www.linkedin.com/in/mattgourd/'
     }
   ],
   skills: [
-    'Solidity',
-    'C#',
-    'JavaScript',
-    'TypeScript',
-    'NodeJS/NestJS',
-    'ReactJS',
-    'React Native',
-    'Phaser',
-    'Ionic',
-    'Angular',
-    'Firebase',
-    'NativeScript',
-    'Unity',
-    'ASP.NET',
-    'Azure',
-    'PostgreSQL',
-    'MongoDB'
+    'Markdown',
+    'AsciiDoc#',
+    'HTML',
+    'CSS',
+    'XML',
+    'JSON',
+    'YAML',
+    'OpenAPI',
+    'Swagger',
+    'Postman',
+    'Git',
+    'Docs-as-Code',
+    'Agile'
   ],
-  languages: ['English', 'Spanish'],
-  professionalSummary: `Full Stack Developer and Open Source Contributor with 10+ years of experience in web, mobile and game development. Passionate about driving innovation and delivering optimal solutions with a commitment to OSS and UX. Experienced in multiple business domains; Social Networks, Healthcare, Delivery, Consulting, Retail, E-commerce, Blockchain and Information Technology.`,
+  languages: ['English'],
+  professionalSummary: `Senior technical writer with over 20 years in digital. Champion at writing documentation for software developers. Cheerful, enthusiastic, and approachable to colleagues at all levels.\n 
+  Interests: FinTech, neobanks, digital banking, cloud banking, digital wallets, loan origination, online payments, e-commerce, money transfer, blockchain, cryptocurrency.`,
   employmentHistory: [
     {
-      jobTitle: 'Tech Lead / Full-Stack Developer',
-      startDate: 'May 2021',
+      jobTitle: 'Senior Technical Writer',
+      startDate: 'Nov 2021',
       endDate: 'Present',
-      employer: 'Zagalabs',
+      employer: 'Backbase',
       city: 'Remote',
       achievements: [
-        'Led code refactors using best practices with Angular & NgRx to improve code reusability from web and mobile apps.',
-        'Created demos and collaborated with the team for integrations with third-party providers like Uber Eats.'
+        'Manage and expand functional, procedural, and reference documentation released with a loan origination software product sold to banks.',
+        'Improve documentation architecture and style, adhering to the Google developer documentation style guide.',
+        'Streamline internal processes with other technical writers and stakeholders to deliver greater efficiency.',
       ]
     },
     {
-      jobTitle: 'Front-End Developer / Tech Lead',
-      startDate: 'Mar 2017',
+      jobTitle: 'Technical Account Manager',
+      startDate: 'May 2021',
+      endDate: 'Oct 2021',
+      employer: 'Viva Wallet',
+      city: 'Remote',
+      achievements: [
+        'Took ownership of client queries, working independently or co-ordinating with colleagues in Sales Success, Product and Development teams. In the event of platform instabilities, software bugs or loss of service, expedited issues to the Core team.',
+        'Wrote and published technical documentation for the Viva Wallet Developer Portal. Established a Docs-as-Code approach with Markdown for content authoring, a static website generator for online publishing, and GitHub for version control.',
+      ]
+    },
+    {
+      jobTitle: 'Technical Writer',
+      startDate: 'Jan 2019',
       endDate: 'Apr 2021',
-      employer: 'BevyUp (Acquired by Nordstrom) - S4N',
+      employer: 'Viva Wallet',
       city: 'Remote',
       achievements: [
-        'Joined as the first remote employee and worked with the founders to improve the performance and UX of the apps according to the business goals.',
-        'Led team of 5 engineers and Coordinate with other teams to build a modular mobile app for iOS and Android with React Native.',
-        'Developed native integrations to improve the UX of mobile apps, reaching more than 3 million downloads with Open Source side projects.',
+        'Developed comprehensive web-based developer resources for payment APIs, online checkouts, and e-commerce plugins.',
+        'Built a brand-new developer portal from scratch.',
+        'Introduced Docs-as-Code approach to documentation.',
+        'Enhanced and extended API reference material.',
       ]
     },
     {
-      jobTitle: 'Consultant and Software Architect',
-      startDate: 'Nov 2016',
-      endDate: 'Mar 2017',
-      employer: 'MVM Ingeniería de software',
-      city: 'Medellín/Colombia',
+      jobTitle: 'Digital Content Officer',
+      startDate: 'Apr 2018',
+      endDate: 'Dec 2018',
+      employer: 'University of the Arts',
+      city: 'London',
       achievements: [
-        'Created the baseline for the development of reactive apps using new technologies such as MeteorJS and GraphQL for rapid prototyping.',
-        'Contributed to configure continuous integration pipelines for new projects through cloud services with Azure and Visual Studio Team Services.'
+        'Developed online content and forms.',
+        'Migrated content to a new website platform.',
       ]
     },
     {
-      jobTitle: 'Senior Developer / Tech Lead',
-      startDate: 'Oct 2014',
-      endDate: 'Nov 2016',
-      employer: 'Yuxi Global',
-      city: 'Medellín/Colombia',
+      jobTitle: 'Technical Writer',
+      startDate: 'Sep 2017',
+      endDate: 'Feb 2018',
+      employer: 'ipagoo',
+      city: 'London',
       achievements: [
-        'Created a course about JavaScript Patterns for the company.',
-        'Defined baseline for cross-platform mobile applications using new technologies, with these results the company became an Ionic Trusted Partner.',
-        'Help engineers grow by guiding them through the right challenges, developing self-confidence and soft skills by delegating new responsibilities through a mentoring process.'
+        'Wrote API documentation and technical blog posts for a FinTech in the Open Banking space.',
+        'Brought in a standardised look to all digital content, and built a developer portal from the ground up.',
       ]
     },
     {
-      jobTitle: 'Tech Lead',
-      startDate: 'Jul 2014',
-      endDate: 'Oct 2014',
-      employer: '1Cero1 Software',
-      city: 'Medellín/Colombia',
+      jobTitle: 'Technical Writer',
+      startDate: 'Jun 2016',
+      endDate: 'May 2017',
+      employer: 'MIRACL',
+      city: 'London',
       achievements: [
-        'Designed baselines for mobile application development using PhoneGap/Cordova with Ionic Framework.',
-        'Trained the team for the implementation of new methodologies such as ALM for the management of applications.'
-      ]
-    },
-    {
-      jobTitle: 'Semi-Senior Analyst Developer',
-      startDate: 'Feb 2014',
-      endDate: 'Jun 2014',
-      employer: 'Aerolínea de Antioquia',
-      city: 'Medellín/Colombia',
-      achievements: [
-        `Help the decision-making process of the company, performing research and developing ideas to migrate the company's web portal using CMS based on ASP.NET.`
-      ]
-    },
-    {
-      jobTitle: 'Software Developer',
-      startDate: 'Jul 2012',
-      endDate: 'Jan 2014',
-      employer: 'Pacifica Diseño',
-      city: 'Medellín/Colombia',
-      achievements: [
-        'Designed templates with ASP.NET MVC to avoid using Server-side controls (WebForms) for a better separation of concerns (KISS principle).',
-        'Defined and implemented a Code-First approach, using ORMs such as Entity Framework to manipulate the database from code.'
+        'Wrote user guides to accompany a zero-factor authentication platform.', 
+        'Peer-reviewed MIRACL SDK developer support material.', 
+        'Tested and documented encryption products on AWS servers and VMs.',
       ]
     }
   ],
-  photo: 'https://s3.eu-west-1.amazonaws.com/resumedone-eu-west-1/AxajI58Ph-photo.png',
+  photo: 'https://res.cloudinary.com/diy2hv1ds/image/upload/v1689492027/the-master-square-removebg-whitebg_mpz7uq.png',
 }
 
 const formatResume = (r) => ({

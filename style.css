@@ -28,7 +28,7 @@ li::marker {
 }
 
 p {
-  font-size: 2.48262rem;
+  font-size: 1.8rem;
   letter-spacing: 0.115103rem;
   color: #666766;
   word-break: break-all;
@@ -67,10 +67,10 @@ p {
   font-size: 9.02771rem;
   text-transform: uppercase;
   word-break: break-all;
-  padding-right: 5.64232rem;
+  padding-right: 5.64231.8rem;
   color: #3e3e3e;
   line-height: 1.09;
-  letter-spacing: 4.15952rem;
+  letter-spacing: 4.15951.8rem;
   direction: ltr;
 }
 
@@ -81,7 +81,7 @@ p {
 }
 .jobTitle span {
   padding-left: 1rem;
-  letter-spacing: 0.710932rem;
+  letter-spacing: 0.710931.8rem;
   text-transform: uppercase;
   word-break: break-all;
   direction: ltr;
@@ -90,8 +90,8 @@ p {
 }
 
 .photo {
-  width: 27.2rem;
-  height: 27.2rem;
+  width: 27.1.8rem;
+  height: 27.1.8rem;
   max-height: 270px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -101,7 +101,7 @@ p {
   width: 0.225693rem;
   bottom: 3.1597rem;
   left: 1rem;
-  height: 5.64232rem;
+  height: 5.64231.8rem;
   background-color: #292929;
 }
 
@@ -139,7 +139,7 @@ a p {
   padding-top: 0rem;
   padding-bottom: 3.8rem;
   color: #222121;
-  letter-spacing: 1.01562rem;
+  letter-spacing: 1.01561.8rem;
   margin-bottom: 1.8rem;
 }
 
@@ -160,15 +160,15 @@ a p {
   width: 0.3rem;
   height: 70%;
   background-color: #292929;
-  margin-top: 4.2rem;
+  margin-top: 4.1.8rem;
 }
 
 .record {
-  padding-top: 2rem;
+  padding-top: 1.8rem;
 }
 .record p {
   width: 100%;
-  font-size: 2.7rem;
+  font-size: 1.8rem;
   line-height: 1.33;
   color: #666766;
   word-break: break-word;
@@ -178,14 +178,14 @@ a p {
 li {
   font-family: Raleway;
   line-height: 1.33;
-  font-size: 2.8806rem;
+  font-size: 1.8rem;
   color: #7b7b7b;
 }
 
 span {
   color: #666766;
-  font-size: 2.28048rem;
-  line-height: 1.2;
+  font-size: 1.8rem;
+  line-height: 1.33;
   letter-spacing: 0.5rem;
 }
 
@@ -224,7 +224,7 @@ span {
   }
 
   .header {
-    padding-top: 12rem;
+    padding-top: 11.8rem;
     padding-bottom: 9rem;
   }
 
