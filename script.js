@@ -30,7 +30,7 @@ const resume = {
   ],
   skills: [
     'Markdown',
-    'AsciiDoc#',
+    'AsciiDoc',
     'HTML',
     'CSS',
     'XML',
