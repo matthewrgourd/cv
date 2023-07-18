@@ -4,7 +4,7 @@
 const resume = {
   firstName: 'Matt',
   lastName: 'Gourd',
-  jobTitle: 'Senior Technical Writer',
+  jobTitle: 'Manager, Documentation',
   city: 'London',
   postalCode: 'N2',
   country: 'UK',
