@@ -45,7 +45,7 @@ const resume = {
   ],
   languages: ['English'],
   professionalSummary: `Documentation manager with over 20 years in digital. Cheerful, enthusiastic, and approachable to colleagues at all levels.\n 
-  Interests: FinTech, neobanks, digital banking, cloud banking, digital wallets, loan origination, online payments, e-commerce, money transfer, blockchain, cryptocurrency.`,
+  Interests: FinTech, neobanks, digital banking, cloud banking, digital wallets, loan origination, online payments.`,
   employmentHistory: [
     {
       jobTitle: 'Manager, Documentation',
