@@ -51,14 +51,14 @@ p {
 }
 
 .firstName {
-  font-weight: lighter;
+  font-weight: bold;
+  font-size: 7.8rem;
   text-transform: uppercase;
   word-break: break-all;
+  padding-right: 5.64231.8rem;
   color: #3e3e3e;
-  font-size: 6rem;
-  line-height: 1.68;
-  letter-spacing: 3.89546rem;
-  margin-bottom: 1.12846rem;
+  line-height: 1.09;
+  letter-spacing: 4.15951.8rem;
   direction: ltr;
 }
 
