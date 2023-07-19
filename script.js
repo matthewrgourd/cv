@@ -15,7 +15,7 @@ const resume = {
       school: 'University of Wales',
       degree: 'BSc',
       graduationDate: '1995',
-      description: 'Technology Management'
+      description: 'Technology Management (1 year completed)'
     }
   ],
   links: [
