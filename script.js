@@ -29,6 +29,7 @@ const resume = {
     }
   ],
   skills: [
+    'Docs-as-Code',
     'Markdown',
     'AsciiDoc',
     'HTML',
@@ -39,9 +40,7 @@ const resume = {
     'OpenAPI',
     'Swagger',
     'Postman',
-    'Git',
-    'Docs-as-Code',
-    'Agile'
+    'Git'
   ],
   languages: ['English'],
   professionalSummary: `Documentation manager with over 20 years in digital. Cheerful, enthusiastic, and approachable to colleagues at all levels.\n 
