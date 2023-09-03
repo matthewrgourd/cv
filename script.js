@@ -62,9 +62,9 @@ const resume = {
       employer: 'Backbase',
       city: 'Remote',
       achievements: [
-        'Manage and expand functional, procedural, and reference documentation released with a loan origination software product sold to banks.',
-        'Improve documentation architecture and style, adhering to the Google developer documentation style guide.',
-        'Streamline internal processes with other technical writers and stakeholders to deliver greater efficiency.',
+        'Expanded functional, procedural, and reference documentation released with a loan origination software product for banks.',
+        'Improved documentation architecture and style, adhering to the Google Developer Documentation Style Guide.',
+        'Streamlined internal processes with other technical writers and stakeholders to deliver greater efficiency.',
       ]
     },
     {
