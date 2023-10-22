@@ -1,3 +1,3 @@
 # CV
 
-CV for Matt Gourd in HTML format.
+My CV in HTML format: https://matthewrgourd.github.io/cv
