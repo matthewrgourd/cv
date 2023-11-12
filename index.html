@@ -127,10 +127,10 @@
                 <i class="bi bi-record-circle"></i>
               </div>
               <div class="col">
-                <p class="fw-bold text-uppercase">
+                <p class="fw-bold">
                   {{ e.degree }}
                 </p>
-                <p class="fw-bold text-uppercase">
+                <p class="fw-bold">
                   {{ e.school }}, {{ e.graduationDate }}
                 </p>
                 <p>{{ e.description }}</p>
@@ -147,9 +147,8 @@
               </div>
               <div class="col">
                 <p>
-                  {{ l.label }}:
                   <a class="text-reset" target="_blank" v-bind:href.prop="l.link">
-                    {{ l.link }}
+                    {{ l.label }}
                   </a>
                 </p>
               </div>
@@ -195,7 +194,7 @@
                 <i class="bi bi-circle-fill"></i>
               </div>
               <div class="col">
-                <p class="title">About Me</p>
+                <p class="title">About me</p>
               </div>
             </div>
             </animatable-component>
@@ -219,7 +218,7 @@
                 <i class="bi bi-circle-fill"></i>
               </div>
               <div class="col">
-                <p class="title">Work Experience</p>
+                <p class="title">Work experience</p>
               </div>
             </div>
             <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
@@ -227,15 +226,15 @@
                 <i class="bi bi-record-circle"></i>
               </div>
               <div class="col">
-                <p class="text-uppercase fw-bold position-relative">
+                <p class="fw-bold position-relative">
                   {{ employment.jobTitle }}
                   <span>&nbsp;|&nbsp;{{ employment.startDate }} - {{ employment.endDate }}</span>
                 </p>
                 <p class="fst-italic fw-bold">
                   {{ employment.employer }}, {{ employment.city }}
                 </p>
-                <p class="mb-0" v-for="achievement in employment.achievements">
-                  • {{ achievement }}
+                <p v-for="achievement in employment.achievements">
+                  {{ achievement }}
                 </p>
               </div>
             </div>

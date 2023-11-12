@@ -2,13 +2,13 @@
  * Resume/CV template created with Bootstrap 5 by @vmoratog and @jdnichollsc
  */
 const resume = {
-  firstName: 'Matt',
-  lastName: 'Gourd',
+  firstName: 'Matt Gourd',
+  lastName: '',
   jobTitle: 'Manager, Documentation',
   city: 'London',
   postalCode: 'N2',
-  country: 'UK',
-  phone: '(+44)7498719486',
+  country: '',
+  phone: '(+44) 7498719486',
   email: 'mattgourd@gmail.com',
   education: [
     {
@@ -50,7 +50,7 @@ const resume = {
     {
       jobTitle: 'Manager, Documentation',
       startDate: 'July 2023',
-      endDate: 'Present',
+      endDate: 'current',
       employer: 'Backbase',
       city: 'remote',
       achievements: [
@@ -89,7 +89,7 @@ const resume = {
       startDate: 'Jan 2019',
       endDate: 'Apr 2021',
       employer: 'Viva Wallet',
-      city: 'emote',
+      city: 'remote',
       achievements: [
         'Lead technical writer for Viva Wallet. Developed comprehensive web-based developer resources for payment APIs, online checkouts, and e-commerce plugins.',
       ]

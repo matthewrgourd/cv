@@ -133,7 +133,6 @@ a p {
   width: 100%;
   font-weight: bold;
   font-size: 4rem;
-  text-transform: uppercase;
   line-height: 4.5rem;
   border-bottom: 1px solid #231f20;
   padding-top: 0rem;
@@ -179,14 +178,13 @@ li {
   font-family: Raleway;
   line-height: 1.33;
   font-size: 1.8rem;
-  color: #7b7b7b;
+  color: #292929;
 }
 
 span {
   color: #292929;
   font-size: 1.8rem;
   line-height: 1.33;
-  letter-spacing: 0.5rem;
 }
 
 .btn-group-fab {
