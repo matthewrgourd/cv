@@ -33,6 +33,7 @@ const resume = {
     'Markdown',
     'AsciiDoc',
     'HTML',
+    'JavaScript',
     'CSS',
     'XML',
     'JSON',
@@ -51,8 +52,12 @@ const resume = {
       startDate: 'July 2023',
       endDate: 'Present',
       employer: 'Backbase',
-      city: 'Remote',
+      city: 'remote',
       achievements: [
+        'Manage a team of three technical writers, providing guidance, training, and mentorship to ensure optimal performance and cohesiveness within the documentation team.',
+        'Work closely with backend and frontend engineering teams to capture and communicate technical information effectively, ensuring a seamless synergy between development and documentation efforts.',
+        'Contribute to product enhancement and user satisfaction by creating detailed overviews, setup guides, configuration instructions, and reference materials that improve user comprehension and product utilization.',
+        'Ensure that documentation meets high quality standards, adheres to best practices, and consistently delivers value to customers.',
               ]
     },
     {
@@ -60,11 +65,12 @@ const resume = {
       startDate: 'Nov 2021',
       endDate: 'July 2023',
       employer: 'Backbase',
-      city: 'Remote',
+      city: 'remote',
       achievements: [
-        'Expanded functional, procedural, and reference documentation released with a loan origination software product for banks and credit unions.',
-        'Improved documentation architecture and style, adhering to the Google Developer Documentation Style Guide.',
-        'Streamlined internal processes with other technical writers and stakeholders to deliver greater efficiency.',
+        'Enhanced the quality of functional, procedural, and reference documentation for a loan origination software product tailored to banks and credit unions. These improvements contributed to a more comprehensive and user-friendly resource for clients.',
+        'Ensured compliance with the Google Developer Documentation Style Guide, implementing consistent architecture and style across all documentation. This adherence to industry best practices enabled improved user comprehension and satisfaction.',
+        'Collaborated effectively with fellow technical writers and key stakeholders to optimize internal processes. These efforts resulted in increased efficiency and smoother documentation development workflows, leading to improved product delivery timelines.',
+        'Played a vital role in enhancing the UX copy within the product, collaborating closely with frontend engineers to implement these improvements effectively. This work contributed to a better user experience for our customers.',
       ]
     },
     {
@@ -72,9 +78,9 @@ const resume = {
       startDate: 'May 2021',
       endDate: 'Oct 2021',
       employer: 'Viva Wallet',
-      city: 'Remote',
+      city: 'remote',
       achievements: [
-        'Took ownership of client queries, working independently or co-ordinating with colleagues in Sales Success, Product and Development teams. In the event of platform instabilities, software bugs or loss of service, expedited issues to the Core team.',
+        'Took ownership of client queries, working independently or co-ordinating with colleagues in Sales Success, Product and Development teams. In the event of platform instabilities, software bugs or loss of service, escalated to the Core team.',
         'Wrote and published technical documentation for the Viva Wallet Developer Portal. Established a Docs-as-Code approach with Markdown for content authoring, a static website generator for online publishing, and GitHub for version control.',
       ]
     },
@@ -83,12 +89,9 @@ const resume = {
       startDate: 'Jan 2019',
       endDate: 'Apr 2021',
       employer: 'Viva Wallet',
-      city: 'Remote',
+      city: 'emote',
       achievements: [
-        'Developed comprehensive web-based developer resources for payment APIs, online checkouts, and e-commerce plugins.',
-        'Built a brand-new developer portal from scratch.',
-        'Introduced Docs-as-Code approach to documentation.',
-        'Enhanced and extended API reference material.',
+        'Lead technical writer for Viva Wallet. Developed comprehensive web-based developer resources for payment APIs, online checkouts, and e-commerce plugins.',
       ]
     },
     {
@@ -98,8 +101,7 @@ const resume = {
       employer: 'University of the Arts',
       city: 'London',
       achievements: [
-        'Developed online content and forms.',
-        'Migrated content to a new website platform.',
+        'Developed online content and forms for the University of the Arts. Migrated content to a new website platform.',
       ]
     },
     {
@@ -109,8 +111,7 @@ const resume = {
       employer: 'ipagoo',
       city: 'London',
       achievements: [
-        'Wrote API documentation and technical blog posts for a FinTech in the Open Banking space.',
-        'Brought in a standardised look to all digital content, and built a developer portal from the ground up.',
+        'Wrote API documentation and technical blog posts for a FinTech in the Open Banking space. Introduced a standardised look to all digital content, and built a developer website from the ground up.',
       ]
     },
     {
@@ -120,9 +121,7 @@ const resume = {
       employer: 'MIRACL',
       city: 'London',
       achievements: [
-        'Wrote user guides to accompany a zero-factor authentication platform.', 
-        'Peer-reviewed MIRACL SDK developer support material.', 
-        'Tested and documented encryption products on AWS servers and VMs.',
+        'Wrote user guides to accompany a zero-factor authentication platform. Tested and documented encryption products on AWS servers and VMs.',
       ]
     }
   ],

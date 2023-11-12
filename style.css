@@ -30,7 +30,7 @@ li::marker {
 p {
   font-size: 1.8rem;
   letter-spacing: 0.115103rem;
-  color: #666766;
+  color: #292929;
   word-break: break-all;
   justify-content: center;
 }
@@ -117,7 +117,7 @@ p {
 
 a p {
   word-break: break-all;
-  color: #666766;
+  color: #292929;
 }
 
 .list-item {
@@ -170,7 +170,7 @@ a p {
   width: 100%;
   font-size: 1.8rem;
   line-height: 1.33;
-  color: #666766;
+  color: #292929;
   word-break: break-word;
   display: block;
 }
@@ -183,7 +183,7 @@ li {
 }
 
 span {
-  color: #666766;
+  color: #292929;
   font-size: 1.8rem;
   line-height: 1.33;
   letter-spacing: 0.5rem;
