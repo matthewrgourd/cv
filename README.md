@@ -1,3 +1,5 @@
 # CV
 
-My CV in HTML format: https://matthewrgourd.github.io/cv
+My CV in HTML format. 
+
+https://matthewrgourd.github.io/cv
