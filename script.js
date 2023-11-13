@@ -20,12 +20,16 @@ const resume = {
   ],
   links: [
     {
+      label: 'Portfolio',
+      link: 'https://matthewrgourd.github.io/portfolio'
+    },
+    {
       label: 'GitHub',
       link: 'https://github.com/matthewrgourd'
     },
     {
       label: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/mattgourd/'
+      link: 'https://www.linkedin.com/in/mattgourd'
     }
   ],
   skills: [
