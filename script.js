@@ -13,9 +13,9 @@ const resume = {
   education: [
     {
       school: 'University of Wales',
-      degree: 'BSc',
+      degree: 'BSc (Hons)',
       graduationDate: '1995',
-      description: 'Technology Management (1 year completed)'
+      description: 'Technology Management (1 year completed at 2:1 level)'
     }
   ],
   links: [
@@ -24,12 +24,12 @@ const resume = {
       link: 'https://matthewrgourd.github.io/portfolio'
     },
     {
-      label: 'GitHub',
-      link: 'https://github.com/matthewrgourd'
-    },
-    {
       label: 'LinkedIn',
       link: 'https://www.linkedin.com/in/mattgourd'
+    },
+    {
+      label: 'GitHub',
+      link: 'https://github.com/matthewrgourd'
     }
   ],
   skills: [
