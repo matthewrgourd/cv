@@ -34,6 +34,11 @@ const resume = {
   ],
   skills: [
     'Docs-as-Code',
+    'Static site generators',
+    'Hugo',
+    'Antora',
+    'Docusaurus',
+    'Wordpress',
     'Markdown',
     'AsciiDoc',
     'HTML',
