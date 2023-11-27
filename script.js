@@ -134,7 +134,7 @@ const resume = {
       ]
     }
   ],
-  photo: 'https://res.cloudinary.com/diy2hv1ds/image/upload/v1689492027/the-master-square-removebg-whitebg_mpz7uq.png',
+  photo: 'https://res.cloudinary.com/diy2hv1ds/image/upload/v1701097654/matt-gourd_mgozgl.png',
 }
 
 const formatResume = (r) => ({
