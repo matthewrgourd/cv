@@ -30,6 +30,10 @@ const resume = {
     {
       label: 'GitHub',
       link: 'https://github.com/matthewrgourd'
+    },
+    {
+      label: 'Twitter',
+      link: 'https://twitter.com/clearpattern'
     }
   ],
   skills: [
