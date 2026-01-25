@@ -2,88 +2,96 @@
  * Resume/CV template created with Bootstrap 5 by @vmoratog and @jdnichollsc
  */
 const resume = {
-  firstName: 'Matt Gourd',
-  lastName: '',
-  jobTitle: 'Manager, Documentation',
+  firstName: 'Matthew',
+  lastName: 'Gourd',
+  jobTitle: 'Senior Technical Writer',
   city: 'London',
-  postalCode: 'N2',
+  postalCode: '',
   country: '',
-  phone: '(+44) 7498719486',
+  phone: '',
   email: 'mattgourd@gmail.com',
   education: [
     {
       school: 'University of Wales',
-      degree: 'BSc (Hons)',
-      graduationDate: '1995',
-      description: 'Technology Management (1 year completed at 2:1 level)'
+      degree: 'BSc (Hons) Technology Management',
+      graduationDate: '',
+      description: 'Part-completed, achieved 2:1 in first year'
+    },
+    {
+      school: 'Marling Grammar School',
+      degree: '10 GCSE passes, 2 A-Level passes',
+      graduationDate: '',
+      description: 'English and Art'
     }
   ],
   links: [
     {
-      label: 'Portfolio',
-      link: 'https://matthewrgourd.github.io/portfolio'
+      label: 'Website',
+      link: 'https://mattgourd.com'
     },
     {
       label: 'LinkedIn',
       link: 'https://www.linkedin.com/in/mattgourd'
-    },
-    {
-      label: 'GitHub',
-      link: 'https://github.com/matthewrgourd'
-    },
-    {
-      label: 'Twitter',
-      link: 'https://twitter.com/clearpattern'
     }
   ],
   skills: [
     'Docs-as-Code',
-    'Static site generators',
-    'Hugo',
-    'Antora',
-    'Docusaurus',
-    'Wordpress',
     'Markdown',
     'AsciiDoc',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'XML',
-    'JSON',
-    'YAML',
+    'MDX',
+    'Hugo',
+    'Antora',
+    'Mintlify',
+    'Confluence',
+    'Jira',
+    'Git',
+    'GitHub',
+    'VS Code',
+    'Cursor',
+    'Copilot',
+    'Custom GPTs',
+    'MCP servers',
     'OpenAPI',
     'Swagger',
-    'Postman',
-    'Git'
+    'JSON',
+    'YAML'
   ],
-  languages: ['English'],
-  professionalSummary: `Documentation manager with over 20 years in digital. Cheerful, enthusiastic, and approachable to colleagues at all levels.\n 
-  Interests: FinTech, neobanks, digital banking, cloud banking, digital wallets, loan origination, online payments.`,
+  professionalSummary: `Accomplished technical writing specialist driving developer adoption in high-growth fintech and SaaS companies. Expert at transforming complex engineering concepts into clear documentation that accelerates product success. Proven track record in API documentation and developer enablement. Advocate for modern docs-as-code workflows and AI-enhanced productivity.`,
   employmentHistory: [
     {
-      jobTitle: 'Manager, Documentation',
-      startDate: 'July 2023',
-      endDate: 'current',
+      jobTitle: 'Senior Technical Writer',
+      startDate: 'Dec 2025',
+      endDate: 'Present',
       employer: 'Backbase',
       city: 'remote',
       achievements: [
-        'Manage a team of three technical writers, providing guidance, training, and mentorship to ensure optimal performance and cohesiveness within the documentation team.',
-        'Work closely with backend and frontend engineering teams to capture and communicate technical information effectively, ensuring a seamless synergy between development and documentation efforts.',
-        'Contribute to product enhancement and user satisfaction by creating detailed overviews, setup guides, configuration instructions, and reference materials that improve user comprehension and product utilization.',
-        'Ensure that documentation meets high quality standards, adheres to best practices, and consistently delivers value to customers.',
-              ]
+        'Produce extensive technical documentation for solution engineers working with bank clients',
+        'Drive adoption of standardised workflows to improve consistency across development teams',
+        'Use an AI-first workflow to extract details from source code and accelerate documentation'
+      ]
+    },
+    {
+      jobTitle: 'Documentation Manager',
+      startDate: 'Jul 2023',
+      endDate: 'Nov 2025',
+      employer: 'Backbase',
+      city: 'remote',
+      achievements: [
+        'Lead distributed team of technical writers, enhancing collaboration, productivity, and growth',
+        'Partnered with engineers to produce developer guides for complex banking software',
+        'Championed AI tool adoption while maintaining rigorous quality standards'
+      ]
     },
     {
       jobTitle: 'Senior Technical Writer',
       startDate: 'Nov 2021',
-      endDate: 'July 2023',
+      endDate: 'Jul 2023',
       employer: 'Backbase',
       city: 'remote',
       achievements: [
-        'Enhanced the quality of functional, procedural, and reference documentation for a loan origination software product tailored to banks and credit unions. These improvements contributed to a more comprehensive and user-friendly resource for clients.',
-        'Ensured compliance with the Google Developer Documentation Style Guide, implementing consistent architecture and style across all documentation. This adherence to industry best practices enabled improved user comprehension and satisfaction.',
-        'Collaborated effectively with fellow technical writers and key stakeholders to optimize internal processes. These efforts resulted in increased efficiency and smoother documentation development workflows, leading to improved product delivery timelines.',
-        'Played a vital role in enhancing the UX copy within the product, collaborating closely with frontend engineers to implement these improvements effectively. This work contributed to a better user experience for our customers.',
+        'Created comprehensive technical and integration documentation for global banking software',
+        'Implemented the Google Developer Documentation Style Guide across EMEA teams',
+        'Enhanced peer review processes and content strategy for fast-paced product release cycles'
       ]
     },
     {
@@ -93,8 +101,9 @@ const resume = {
       employer: 'Viva Wallet',
       city: 'remote',
       achievements: [
-        'Took ownership of client queries, working independently or co-ordinating with colleagues in Sales Success, Product and Development teams. In the event of platform instabilities, software bugs or loss of service, escalated to the Core team.',
-        'Wrote and published technical documentation for the Viva Wallet Developer Portal. Established a Docs-as-Code approach with Markdown for content authoring, a static website generator for online publishing, and GitHub for version control.',
+        'Served as primary technical liaison for enterprise clients during high-stakes system incidents',
+        'Authored comprehensive payment API guides that improved developer adoption rates',
+        'Built a fully automated docs-as-code pipeline using GitHub and Markdown'
       ]
     },
     {
@@ -104,17 +113,21 @@ const resume = {
       employer: 'Viva Wallet',
       city: 'remote',
       achievements: [
-        'Lead technical writer for Viva Wallet. Developed comprehensive web-based developer resources for payment APIs, online checkouts, and e-commerce plugins.',
+        'Built a developer portal from scratch, accelerating developer community growth',
+        'Wrote comprehensive API, SDK, and plugin documentation for payment integration platform',
+        'Established documentation analytics to drive data-driven content optimisation'
       ]
     },
     {
       jobTitle: 'Digital Content Officer',
       startDate: 'Apr 2018',
       endDate: 'Dec 2018',
-      employer: 'University of the Arts',
+      employer: 'University of the Arts London (UAL)',
       city: 'London',
       achievements: [
-        'Developed online content and forms for the University of the Arts. Migrated content to a new website platform.',
+        'Led large-scale content migration during CMS transition impacting more than 20,000 students',
+        'Redesigned online forms and workflows to support diverse student population',
+        'Collaborated across IT and academic departments to ensure seamless digital transformation'
       ]
     },
     {
@@ -124,21 +137,23 @@ const resume = {
       employer: 'ipagoo',
       city: 'London',
       achievements: [
-        'Wrote API documentation and technical blog posts for a FinTech in the Open Banking space. Introduced a standardised look to all digital content, and built a developer website from the ground up.',
+        'Created comprehensive Open Banking API documentation during critical regulatory transition',
+        'Launched the company\'s first developer portal in high-growth fintech startup environment'
       ]
     },
     {
-      jobTitle: 'Technical Writer',
+      jobTitle: 'Technical Writer (Contract)',
       startDate: 'Jun 2016',
       endDate: 'May 2017',
       employer: 'MIRACL',
       city: 'London',
       achievements: [
-        'Wrote user guides to accompany a zero-factor authentication platform. Tested and documented encryption products on AWS servers and VMs.',
+        'Documented complex cryptographic SDKs and multi-factor authentication platforms',
+        'Conducted technical reviews and testing on AWS infrastructure for worldwide deployment'
       ]
     }
   ],
-  photo: 'https://res.cloudinary.com/diy2hv1ds/image/upload/v1701097654/matt-gourd_mgozgl.png',
+  photo: './matt-profile-photo2.png',
 }
 
 const formatResume = (r) => ({

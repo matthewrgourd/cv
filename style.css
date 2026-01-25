@@ -23,6 +23,14 @@ ul {
   list-style: circle;
 }
 
+.skills-list {
+  list-style: disc;
+}
+
+.achievements-list {
+  list-style: disc;
+}
+
 li::marker {
   color: black;
 }
@@ -35,16 +43,8 @@ p {
   justify-content: center;
 }
 
-.headLine {
-  width: 0.225693rem;
-  top: 0px;
-  left: 1rem;
-  height: 11.9617rem;
-  background-color: #292929;
-}
-
 .header {
-  padding-top: 17.8297rem;
+  padding-top: 8.8297rem;
   padding-bottom: 10rem;
   direction: ltr;
   margin-bottom: 3rem;
@@ -222,7 +222,7 @@ span {
   }
 
   .header {
-    padding-top: 11.8rem;
+    padding-top: 2.8rem;
     padding-bottom: 9rem;
   }
 

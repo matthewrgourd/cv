@@ -25,9 +25,6 @@
   <body class="d-none">
     <section id="app" class="container-fluid">
       <header class="header position-relative">
-        <animatable-component autoplay animation="fadeInDownBig"  easing="ease-in-out" duration="1200">
-          <div class="headLine position-absolute"></div>
-        </animatable-component>
         <div class="row">
           <div class="col">
             <animatable-component
@@ -118,25 +115,6 @@
               </div>
             </div>
             <div class="row mt-5 me-5">
-              <div class="col">
-                <p class="title">Education</p>
-              </div>
-            </div>
-            <div class="row record" v-for="e in education">
-              <div class="col-auto bullet">
-                <i class="bi bi-record-circle"></i>
-              </div>
-              <div class="col">
-                <p class="fw-bold">
-                  {{ e.degree }}
-                </p>
-                <p class="fw-bold">
-                  {{ e.school }}, {{ e.graduationDate }}
-                </p>
-                <p>{{ e.description }}</p>
-              </div>
-            </div>
-            <div class="row mt-5 me-5">
               <div class="col p-0">
                 <p class="title">Links</p>
               </div>
@@ -160,7 +138,7 @@
             </div>
             <div class="row">
               <div class="col">
-                <ul class="ms-2">
+                <ul class="ms-2 skills-list">
                   <li class="pb-2" v-for="skill in skills">
                     {{ skill }}
                   </li>
@@ -168,17 +146,22 @@
               </div>
             </div>
             <div class="row mt-5 me-5">
-              <div class="col p-0">
-                <p class="title">Languages</p>
+              <div class="col">
+                <p class="title">Education</p>
               </div>
             </div>
-            <div class="row">
+            <div class="row record" v-for="e in education">
+              <div class="col-auto bullet">
+                <i class="bi bi-record-circle"></i>
+              </div>
               <div class="col">
-                <ul class="ms-2">
-                  <li class="pb-2" v-for="language in languages">
-                    {{ language }}
-                  </li>
-                </ul>
+                <p class="fw-bold">
+                  {{ e.degree }}
+                </p>
+                <p class="fw-bold">
+                  {{ e.school }}, {{ e.graduationDate }}
+                </p>
+                <p>{{ e.description }}</p>
               </div>
             </div>
           </div>
@@ -233,9 +216,11 @@
                 <p class="fst-italic fw-bold">
                   {{ employment.employer }}, {{ employment.city }}
                 </p>
-                <p v-for="achievement in employment.achievements">
-                  {{ achievement }}
-                </p>
+                <ul class="ms-3 mb-0 achievements-list">
+                  <li v-for="achievement in employment.achievements" class="pb-1">
+                    {{ achievement }}
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
