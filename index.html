@@ -75,14 +75,14 @@
         <div class="row">
           <div class="col personal-details me-4">
             <div class="row list-item me-5">
-              <div class="col-auto">
+              <div class="col-auto align-self-center">
                 <animatable-component autoplay animation="heartBeat" easing="ease-in" duration="1200">
                   <div class="icon d-flex justify-content-center">
                     <i class="bi bi-geo-alt-fill" role="img" aria-label="Location"></i>
                   </div>
                 </animatable-component>
               </div>
-              <div class="col" style="white-space: pre-line;">
+              <div class="col align-self-center" style="white-space: pre-line;">
                 <p>{{ address }}</p>
               </div>
             </div>
@@ -94,7 +94,7 @@
                   </div>
                 </animatable-component>
               </div>
-              <div class="col">
+              <div class="col align-self-center">
                 <a v-bind:href="'tel:'+ phone" class="text-decoration-none">
                   <p>{{ phone }}</p>
                 </a>
@@ -108,7 +108,7 @@
                   </div>
                 </animatable-component>
               </div>
-              <div class="col">
+              <div class="col align-self-center">
                 <a v-bind:href="'mailto:'+ email" class="text-decoration-none">
                   <p>{{ email }}</p>
                 </a>

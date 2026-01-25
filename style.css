@@ -56,7 +56,7 @@ p {
   text-transform: uppercase;
   word-break: break-all;
   padding-right: 5.64231.8rem;
-  color: #3e3e3e;
+  color: #292929;
   line-height: 1.09;
   letter-spacing: 4.15951.8rem;
   direction: ltr;
@@ -68,7 +68,7 @@ p {
   text-transform: uppercase;
   word-break: break-all;
   padding-right: 5.64231.8rem;
-  color: #3e3e3e;
+  color: #292929;
   line-height: 1.09;
   letter-spacing: 4.15951.8rem;
   direction: ltr;
@@ -77,7 +77,7 @@ p {
 .jobTitle {
   padding-right: 0px;
   margin-top: 4.51385rem;
-  color: #292929;
+  color: #2563eb;
 }
 .jobTitle span {
   padding-left: 1rem;
@@ -110,14 +110,51 @@ p {
   height: 5rem;
   font-size: 2.5rem;
   color: white;
-  background-color: #3e3e3e;
+  background-color: #2563eb;
   border-radius: 50%;
   padding: 0.7rem;
+  transition: background-color 0.2s ease;
+}
+
+.icon:hover {
+  background-color: #1d4ed8;
+}
+
+a {
+  color: #2563eb !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: #1d4ed8 !important;
+  text-decoration: none !important;
+}
+
+a.text-reset {
+  color: #2563eb !important;
+  text-decoration: none !important;
+}
+
+a.text-reset:hover,
+a.text-reset:focus,
+a.text-reset:active,
+a.text-reset:visited {
+  color: #1d4ed8 !important;
+  text-decoration: none !important;
 }
 
 a p {
   word-break: break-all;
-  color: #292929;
+  color: #2563eb !important;
+  transition: color 0.2s ease;
+}
+
+a:hover p {
+  color: #1d4ed8 !important;
 }
 
 .list-item {
@@ -128,13 +165,16 @@ a p {
 .list-item:not(:last-child) {
   border-bottom: 0.225693rem solid #231f20;
 }
+.list-item .col {
+  margin-top: 7px;
+}
 
 .title {
   width: 100%;
   font-weight: bold;
   font-size: 4rem;
   line-height: 4.5rem;
-  border-bottom: 1px solid #231f20;
+  border-bottom: 2px solid #2563eb;
   padding-top: 0rem;
   padding-bottom: 3.8rem;
   color: #222121;
@@ -151,6 +191,7 @@ a p {
 }
 .bullet i {
   font-size: 2.6rem;
+  color: #2563eb;
 }
 .bullet:before {
   content: "";
@@ -172,6 +213,9 @@ a p {
   color: #292929;
   word-break: break-word;
   display: block;
+}
+.record .col {
+  margin-top: 6px;
 }
 
 li {
@@ -210,6 +254,14 @@ span {
   width: 40px;
   height: 40px;
   margin: 4px auto;
+  background-color: #2563eb;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-group-fab .btn:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.1);
 }
 
 @media print {
