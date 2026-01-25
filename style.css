@@ -325,4 +325,24 @@ span {
   .content .personal-details {
     order: -1;
   }
+
+  .bullet i {
+    display: none;
+  }
+
+  .bullet:before {
+    display: none !important;
+  }
+
+  .personal-details .list-item .icon {
+    display: none !important;
+  }
+
+  .personal-details .list-item .col-auto {
+    display: none !important;
+  }
+
+  .personal-details .list-item {
+    border-bottom: none !important;
+  }
 }

@@ -1,6 +1,5 @@
 const resume = {
-  firstName: 'Matthew',
-  lastName: 'Gourd',
+  name: 'Matthew Gourd',
   jobTitle: 'Senior Technical Writer',
   city: 'London',
   postalCode: '',
