@@ -1,6 +1,3 @@
-/**
- * Resume/CV template created with Bootstrap 5 by @vmoratog and @jdnichollsc
- */
 const resume = {
   firstName: 'Matthew',
   lastName: 'Gourd',

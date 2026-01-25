@@ -1,24 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CV - Matt Gourd</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CV</title>
-    <!-- Bootstrap CSS -->
+    <title>CV - Matt Gourd</title>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"></script>
-    <!-- Add Web Animations Polyfill :) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@proyecto26/animatable-component@1.1.10/dist/animatable-component/animatable-component.esm.js"></script>
   </head>
@@ -63,7 +52,7 @@
           </div>
           <div v-if="!!photo" class="col-auto d-none d-lg-block d-print-block">
             <animatable-component autoplay animation="rotateIn" easing="ease-in" duration="1200">
-              <img v-bind:src.prop="photo" class="photo border border-2 border-dark rounded-circle img-fluid float-end img-thumbnail">
+              <img v-bind:src.prop="photo" class="photo border border-2 rounded-circle img-fluid float-end img-thumbnail">
             </animatable-component>
           </div>
         </div>
@@ -235,12 +224,7 @@
       </div>
     </div>
     
-    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
-</body>
 </html>

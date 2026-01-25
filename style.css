@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 * {
-  font-family: Raleway;
+  font-family: Inter;
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
@@ -29,6 +29,11 @@ ul {
 
 .achievements-list {
   list-style: disc;
+}
+
+.achievements-list li {
+  hyphens: none;
+  word-break: normal;
 }
 
 li::marker {
@@ -95,6 +100,12 @@ p {
   max-height: 270px;
   -o-object-fit: contain;
      object-fit: contain;
+  border-color: #2563eb !important;
+}
+
+.photo.border,
+.photo.img-thumbnail {
+  border-color: #2563eb !important;
 }
 
 .middleLine {
@@ -163,7 +174,7 @@ a:hover p {
   margin-right: 1rem;
 }
 .list-item:not(:last-child) {
-  border-bottom: 0.225693rem solid #231f20;
+  border-bottom: 0.225693rem solid #2563eb;
 }
 .list-item .col {
   margin-top: 7px;
@@ -197,10 +208,19 @@ a:hover p {
   content: "";
   position: absolute;
   left: 1.9rem;
+  top: 3.2rem;
   width: 0.3rem;
-  height: 70%;
-  background-color: #292929;
-  margin-top: 4.1.8rem;
+  height: calc(100% - 3.2rem);
+  background-color: #2563eb;
+  z-index: -1;
+}
+
+.col-8 .bullet:before {
+  top: 4.8rem;
+}
+
+.col-8 .row.bullet > .col-auto.bullet:before {
+  display: none !important;
 }
 
 .record {
@@ -213,16 +233,25 @@ a:hover p {
   color: #292929;
   word-break: break-word;
   display: block;
+  letter-spacing: 0;
 }
 .record .col {
   margin-top: 6px;
 }
 
+.personal-details .record .bullet:before {
+  height: calc(100% - 3.2rem + 24px);
+}
+
 li {
-  font-family: Raleway;
+  font-family: Inter;
   line-height: 1.33;
   font-size: 1.8rem;
   color: #292929;
+}
+
+.personal-details .row.record:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 span {
