@@ -90,7 +90,7 @@ p {
   color: #2563eb;
 }
 .jobTitle span {
-  padding-left: 1rem;
+  padding-left: 2px;
   letter-spacing: 0.710931.8rem;
   text-transform: uppercase;
   word-break: break-all;

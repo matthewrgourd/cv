@@ -1,0 +1,20 @@
+Dear vCluster Labs Hiring Team,
+
+I'm writing to apply for the Senior Technical Writer role. With over 20 years of technical writing experience, six of them focused on developer documentation, and a growing personal investment in the Kubernetes and cloud-native ecosystem, this role connects directly with both where I've come from and where I'm heading.
+
+At Backbase, I work alongside solution engineers and developers on complex banking software documentation, using an AI-first workflow to extract detail from source code and helping to drive more standardised processes across distributed teams. Before that, at Viva Wallet, I built a developer portal from scratch and created API, SDK, and plugin documentation using docs-as-code workflows with Git and Markdown.
+
+I spent time with your docs before writing this. The design principles page is a strong example of content that's genuinely clear, with each principle followed by a concrete implementation callout that grounds the concept in how the system actually works. Looking across the wider site, though, it's also easy to see how the six onboarding paths mentioned in the job description have shaped the experience. There's real conceptual depth there, and consolidating that into a single Golden Path for first-time cluster deployment is exactly the kind of structural problem I find interesting to solve. It's rarely just a content issue. It's an architecture one.
+
+I also noticed that your docs site runs on Docusaurus, which is the same framework I'm using to build my own open-source documentation platform. I'm developing it as a real product rather than a portfolio exercise, using Docusaurus and Scalar, with planned CI/CD through GitHub Actions, containerisation with Docker, and infrastructure workflows using Terraform and modern deployment tooling. That project is helping me deepen the cloud-native and platform-engineering context that increasingly shapes how developer documentation is built, tested, and delivered.
+
+That also means I can contribute directly in the codebase, not just in the content. I noticed, for example, that parts of the API reference such as the ClusterAccess resource pages are hand-authored MDX with CLI snippets rather than a rendered interactive reference. I'd be interested in exploring whether Scalar could add value there by giving developers a more interactive way to work with the API inside the docs themselves.
+
+I'm comfortable at the command line, experienced with Git-based workflows across GitHub and GitLab, and I test API examples directly as part of my documentation process. I'd rather ship documentation that measurably improves how quickly a developer gets to their first successful deployment than maintain a large set of pages that nobody reads.
+
+I'd welcome the chance to discuss how my background could support what vCluster is building.
+
+Thank you for your time.
+
+Best regards,
+Matthew Gourd

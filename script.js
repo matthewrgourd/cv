@@ -32,16 +32,24 @@ const resume = {
   ],
   skills: [
     'Docs-as-Code',
+    'Documentation strategy',
+    'Information architecture',
+    'Developer portals',
+    'Documentation analytics',
+    'Onboarding journeys',
+    'API documentation',
+    'SDK documentation',
+    'Docusaurus',
+    'Scalar',
     'Markdown',
     'AsciiDoc',
     'MDX',
     'Hugo',
     'Antora',
     'Mintlify',
-    'Confluence',
-    'Jira',
     'Git',
     'GitHub',
+    'GitLab',
     'VS Code',
     'Cursor',
     'Copilot',
@@ -50,9 +58,10 @@ const resume = {
     'OpenAPI',
     'Swagger',
     'JSON',
-    'YAML'
+    'YAML',
+    'CLI testing'
   ],
-  professionalSummary: `Accomplished technical writing specialist driving developer adoption in high-growth fintech and SaaS companies. Expert at transforming complex engineering concepts into clear documentation that accelerates product success. Proven track record in API documentation and developer enablement. Advocate for modern docs-as-code workflows and AI-enhanced productivity.`,
+  professionalSummary: `Senior technical writer with 20+ years in documentation and six years focused on developer content in high-growth fintech and SaaS environments. Strong track record in docs-as-code, developer portals, API and integration documentation, and cross-functional work with engineering teams to improve adoption and reduce friction. Particularly effective at turning complex product areas into clear onboarding journeys, scalable content structures, and maintainable documentation workflows with an AI-assisted toolchain. Alongside my documentation work, I am building an open-source documentation platform using Docusaurus and Scalar, with planned CI/CD, containerisation, and infrastructure work across GitHub Actions, Docker, Terraform, and modern deployment workflows.`,
   employmentHistory: [
     {
       jobTitle: 'Senior Technical Writer',
@@ -61,9 +70,9 @@ const resume = {
       employer: 'Backbase',
       city: 'remote',
       achievements: [
-        'Produce extensive technical documentation for solution engineers working with bank clients',
-        'Drive adoption of standardised workflows to improve consistency across development teams',
-        'Use an AI-first workflow to extract details from source code and accelerate documentation'
+        'Produce technical documentation for solution engineers and developers working on complex banking implementations',
+        'Drive adoption of standardised documentation workflows to improve consistency across distributed teams',
+        'Use an AI-first workflow to extract implementation details from source code and accelerate delivery without lowering quality'
       ]
     },
     {
@@ -74,8 +83,8 @@ const resume = {
       city: 'remote',
       achievements: [
         'Lead distributed team of technical writers, enhancing collaboration, productivity, and growth',
-        'Partnered with engineers to produce developer guides for complex banking software',
-        'Championed AI tool adoption while maintaining rigorous quality standards'
+        'Partnered with engineers and solution teams to produce developer guides for complex banking software',
+        'Championed AI tool adoption while maintaining rigorous quality standards and repeatable review practices'
       ]
     },
     {
@@ -87,7 +96,7 @@ const resume = {
       achievements: [
         'Created comprehensive technical and integration documentation for global banking software',
         'Implemented the Google Developer Documentation Style Guide across EMEA teams',
-        'Enhanced peer review processes and content strategy for fast-paced product release cycles'
+        'Improved peer review processes and content strategy to support faster, more reliable release cycles'
       ]
     },
     {
@@ -98,7 +107,7 @@ const resume = {
       city: 'remote',
       achievements: [
         'Served as primary technical liaison for enterprise clients during high-stakes system incidents',
-        'Authored comprehensive payment API guides that improved developer adoption rates',
+        'Authored payment API guides and technical enablement content that supported developer adoption',
         'Built a fully automated docs-as-code pipeline using GitHub and Markdown'
       ]
     },
@@ -109,9 +118,9 @@ const resume = {
       employer: 'Viva Wallet',
       city: 'remote',
       achievements: [
-        'Built a developer portal from scratch, accelerating developer community growth',
-        'Wrote comprehensive API, SDK, and plugin documentation for payment integration platform',
-        'Established documentation analytics to drive data-driven content optimisation'
+        'Built a developer portal from scratch using docs-as-code workflows, giving the company its first scalable developer documentation platform',
+        'Wrote API, SDK, and plugin documentation for a payment integration platform, helping developers move from initial setup to successful implementation faster',
+        'Established documentation analytics and feedback loops to support data-driven content optimisation'
       ]
     },
     {
@@ -133,8 +142,8 @@ const resume = {
       employer: 'ipagoo',
       city: 'London',
       achievements: [
-        'Created comprehensive Open Banking API documentation during critical regulatory transition',
-        'Launched the company\'s first developer portal in high-growth fintech startup environment'
+        'Created Open Banking API documentation during a critical regulatory transition',
+        'Launched the company\'s first developer portal in a high-growth fintech startup environment'
       ]
     },
     {
