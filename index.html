@@ -101,13 +101,7 @@
               </div>
               <div class="col">
                 <p>
-                  <a
-                    class="text-reset"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    v-bind:href.prop="l.link"
-                    @click.prevent="openInNewWindow(l.link)"
-                  >
+                  <a class="text-reset" target="_blank" v-bind:href.prop="l.link">
                     {{ l.label }}
                   </a>
                 </p>
@@ -125,36 +119,6 @@
                     {{ skill }}
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="row mt-5 me-5">
-              <div class="col">
-                <p class="title">Certifications</p>
-              </div>
-            </div>
-            <div class="row record" v-for="c in certifications">
-              <div class="col-auto bullet">
-                <i class="bi bi-record-circle"></i>
-              </div>
-              <div class="col">
-                <p class="fw-bold">
-                  {{ c.degree }}
-                </p>
-                <p class="fw-bold">
-                  {{ c.school }}, {{ c.graduationDate }}
-                </p>
-                <p v-if="c.certificateLink">
-                  <a
-                    class="text-reset"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    v-bind:href.prop="c.certificateLink"
-                    @click.prevent="openInNewWindow(c.certificateLink)"
-                  >
-                    {{ c.description }}
-                  </a>
-                </p>
-                <p v-else>{{ c.description }}</p>
               </div>
             </div>
             <div class="row mt-5 me-5">

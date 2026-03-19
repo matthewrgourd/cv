@@ -1,0 +1,11 @@
+{
+  "name": "matt-cv-tools",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate-pdf": "node generate-pdf.js"
+  },
+  "devDependencies": {
+    "puppeteer": "^20.8.0"
+  }
+}
