@@ -319,7 +319,7 @@ span {
 }
 
 @media (max-width: 992px) {
-  .content .row {
+  .content > .row {
     flex-direction: column;
   }
 
