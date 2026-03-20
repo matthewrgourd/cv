@@ -374,4 +374,14 @@ span {
     overflow-wrap: normal;
     text-wrap: balance;
   }
+
+  .title {
+    font-size: clamp(2.2rem, 5.5vw, 3rem);
+    line-height: 1.2;
+    letter-spacing: 0.04rem;
+    padding-bottom: 2rem;
+    word-break: normal;
+    overflow-wrap: normal;
+    text-wrap: balance;
+  }
 }
