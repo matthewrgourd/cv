@@ -347,9 +347,19 @@ span {
     border-bottom: none !important;
   }
 
+  .container-fluid {
+    padding: 0 6% !important;
+  }
+
+  .content {
+    margin-top: -20px;
+    padding-bottom: 24px;
+  }
+
   .header {
     padding-top: 4rem;
     padding-bottom: 5rem;
+    margin-bottom: 1.6rem;
   }
 
   .firstName {
@@ -363,6 +373,7 @@ span {
 
   .jobTitle {
     margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   .jobTitle span {
@@ -379,9 +390,35 @@ span {
     font-size: clamp(2.2rem, 5.5vw, 3rem);
     line-height: 1.2;
     letter-spacing: 0.04rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1rem;
     word-break: normal;
     overflow-wrap: normal;
     text-wrap: balance;
+  }
+
+  .personal-details .title {
+    padding-top: 2.4rem;
+  }
+
+  .list-item {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-right: 0;
+  }
+
+  .record {
+    padding-top: 1.2rem;
+  }
+
+  .personal-details .row.record:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+
+  li,
+  .record p,
+  span,
+  p {
+    line-height: 1.45;
   }
 }
