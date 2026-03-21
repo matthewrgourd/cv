@@ -1,4 +1,5 @@
-const resume = {
+/* CV copy: single source of truth. Loaded before js/app.js. */
+window.CV_RESUME_DATA = {
   name: 'Matthew Gourd',
   jobTitle: 'Senior Technical Writer',
   city: 'London',
@@ -215,33 +216,4 @@ const resume = {
     }
   ],
   photo: './matt-profile-photo2.png',
-}
-
-const formatResume = (r) => ({
-  ...r,
-  address: [
-    r.country,
-    r.city,
-    r.postalCode
-  ].filter(Boolean).join(', ')
-})
-
-new Vue({
-  el: "#app",
-  data: formatResume(resume),
-  methods: {
-    openInNewWindow(url) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    }
-  }
-});
-
-/**
- * Wait for animatable-component to be loaded (Only for VanillaJS)
- **/
-function animatableLoaded() {
-  document.querySelector('body').classList.remove('d-none');
-}
-if (customElements) {
-  customElements.whenDefined('animatable-component').then(animatableLoaded);
-} else animatableLoaded()
+};

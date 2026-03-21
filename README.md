@@ -1,25 +1,35 @@
 # CV
 
-Matthew Gourd's CV in HTML, with a local Puppeteer-based PDF export workflow.
+Matthew Gourd's CV as static HTML, with a local Puppeteer-based PDF export.
 
-## Files
+Layout and animation patterns are based on [this CodePen template](https://codepen.io/itsmesuraj20/pen/NWEwXOp) (Vue 2, Bootstrap 5, `@proyecto26/animatable-component`). This repo refactors that structure for maintainability and common web best practices (semantic HTML, `ignoredElements`, progressive enhancement for links, `mailto:` / `tel:`, skip link, reduced motion, data in `data/resume.js`).
 
-Main source files:
+## Layout
 
-- `index.html` — primary HTML layout
-- `style.css` — shared styling
-- `script.js` — full CV content source
-- `generate-pdf.js` — local PDF generator using Puppeteer
+| Path | Role |
+|------|------|
+| `index.html` | CV page (`<main id="app">` for Vue) |
+| `css/style.css` | Presentation |
+| `data/resume.js` | CV copy only (`window.CV_RESUME_DATA`) |
+| `js/app.js` | Vue bootstrap and `formatResume` |
+| `generate-pdf.js` | PDF generator (Puppeteer) |
 
-Derived one-page render files:
+Third-party UI: Bootstrap 5, Bootstrap Icons, Vue 2, Web Animations, `animatable-component`.
 
-- `index-1page.html` — curated one-page render template
-- `script-1page.js` — curated data for the one-page PDF variant
+## Local preview
 
-Assets:
+Opening `index.html` directly (`file://`) works for the CV (scripts load in order). Optional local server:
+
+```bash
+npm run preview
+```
+
+Then open the URL shown (serves the project root).
+
+## Assets
 
 - `matt-profile-photo2.png`
-- certificate PDFs / images used by the CV content
+- Certificate PDFs linked from `data/resume.js`
 
 ## Install
 
@@ -27,58 +37,38 @@ Assets:
 npm install
 ```
 
-This installs the local dev dependency used for PDF generation:
-
-- `puppeteer`
+Installs the Puppeteer dependency used for PDF generation.
 
 ## Generate PDFs
-
-Default export:
 
 ```bash
 npm run generate-pdf -- /Users/matt/Downloads/Matthew-Gourd.pdf
 ```
 
-Equivalent direct command:
+Or:
 
 ```bash
 node generate-pdf.js /Users/matt/Downloads/Matthew-Gourd.pdf
 ```
 
-Generate from a specific HTML entry point:
-
-```bash
-node generate-pdf.js /Users/matt/Downloads/Matthew-Gourd-1page.pdf /Users/matt/cv/index-1page.html
-```
+Optional third argument: path to another HTML file (defaults to `index.html` in this folder).
 
 ## Export behaviour
 
-The PDF generator is tuned to preserve the rendered on-screen layout rather than relying purely on print CSS.
+The generator renders the chosen HTML in headless Chromium, waits for fonts, captures `#app` to PNG, and wraps it in a single-page PDF so the layout matches the on-screen design.
 
-Current behaviour:
+## Editing the CV
 
-- renders the chosen HTML file in Puppeteer
-- waits for fonts to load
-- captures the rendered CV as an image snapshot
-- embeds that snapshot into a PDF
-- preserves source text sizing more faithfully than the previous A4-only export approach
-
-This means the output is visual-first and designed to match the intended layout closely.
+1. Update copy in **`data/resume.js`**.
+2. Adjust structure in **`index.html`** if sections change.
+3. Adjust styling in **`css/style.css`**.
 
 ## Git notes
-
-The repository should keep source files and assets, but ignore local/generated dependency noise.
 
 Ignored in `.gitignore`:
 
 - `node_modules/`
-- `.DS_Store`
-- common log files
-- local env files
-- editor/cache/temp files
+- `Matthew-Gourd.pdf` (optional local export)
+- `.DS_Store`, logs, editor noise, caches
 
-In general:
-
-- commit `package.json`
-- commit `package-lock.json` if generated
-- do **not** commit `node_modules/`
+Commit `package.json` and `package-lock.json` when present; do not commit `node_modules/`.

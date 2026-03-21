@@ -26,3 +26,6 @@ pnpm-debug.log*
 .cache/
 .tmp/
 tmp/
+
+# Optional local PDF export (regenerate with npm run generate-pdf)
+/Matthew-Gourd.pdf

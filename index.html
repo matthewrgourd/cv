@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CV — Matthew Gourd, Senior Technical Writer.">
     <title>CV - Matt Gourd</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js" integrity="sha384-ULpZhk1pvhc/UK5ktA9kwb2guy9ovNSTyxPNHANnA35YjBQgdwI+AhLkixDvdlw4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js" integrity="sha384-kl5/p6mWkc6l7Aob9EM41xxDK5Zkctd4UBK4hDRTb5e+7G3GzuIlclkhAng47bk+" crossorigin="anonymous"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@proyecto26/animatable-component@1.1.10/dist/animatable-component/animatable-component.esm.js"></script>
   </head>
   <body class="d-none">
-    <section id="app" class="container-fluid">
+    <a class="cv-skip-link" href="#main-cv">Skip to CV content</a>
+    <main id="app" class="container-fluid">
       <header class="header position-relative">
         <div class="row">
           <div class="col">
@@ -37,57 +39,56 @@
                   {{ jobTitle }}
                 </span>
               </p>
-             </animatable-component>
+            </animatable-component>
           </div>
           <div v-if="!!photo" class="col-auto d-none d-lg-block d-print-block">
             <animatable-component autoplay animation="rotateIn" easing="ease-in" duration="1200">
-              <img v-bind:src.prop="photo" class="photo border border-2 rounded-circle img-fluid float-end img-thumbnail">
+              <img :src="photo" :alt="'Photo of ' + name" class="photo border border-2 rounded-circle img-fluid float-end img-thumbnail" width="270" height="270">
             </animatable-component>
           </div>
         </div>
-        <animatable-component autoplay animation="fadeInUpBig"  easing="ease-in-out" duration="1200">
-          <div class="middleLine position-absolute"></div>
-        </animatable-component>
       </header>
-      <section class="content">
+      <div id="main-cv" class="content" tabindex="-1">
         <div class="row">
-          <div class="col personal-details me-4">
+          <div class="col-12 col-lg-4 personal-details me-4">
             <div class="row list-item me-5">
               <div class="col-auto align-self-center">
                 <animatable-component autoplay animation="heartBeat" easing="ease-in" duration="1200">
-                  <div class="icon d-flex justify-content-center">
-                    <i class="bi bi-geo-alt-fill" role="img" aria-label="Location"></i>
+                  <div class="icon d-flex justify-content-center" aria-hidden="true">
+                    <i class="bi bi-geo-alt-fill"></i>
                   </div>
                 </animatable-component>
               </div>
-              <div class="col align-self-center" style="white-space: pre-line;">
+              <div class="col align-self-center cv-text-preline">
                 <p>{{ address }}</p>
               </div>
             </div>
             <div v-if="!!phone" class="row list-item me-5">
               <div class="col-auto align-self-center">
                 <animatable-component autoplay animation="swing" easing="ease-in" duration="1200">
-                  <div class="icon d-flex justify-content-center">
-                    <i class="bi bi-telephone-fill" role="img" aria-label="Telephone"></i>
+                  <div class="icon d-flex justify-content-center" aria-hidden="true">
+                    <i class="bi bi-telephone-fill"></i>
                   </div>
                 </animatable-component>
               </div>
               <div class="col align-self-center">
-                <a v-bind:href="'tel:'+ phone" class="text-decoration-none">
-                  <p>{{ phone }}</p>
+                <a :href="'tel:' + phone.replace(/\s+/g, '')" class="text-decoration-none">
+                  <p class="mb-0">{{ phone }}</p>
                 </a>
               </div>
             </div>
             <div class="row list-item me-5">
               <div class="col-auto align-self-center">
                 <animatable-component autoplay animation="flip" easing="ease-in" duration="1200">
-                  <div class="icon d-flex justify-content-center">
-                    <i class="bi bi-envelope-fill" role="img" aria-label="Email"></i>
+                  <div class="icon d-flex justify-content-center" aria-hidden="true">
+                    <i class="bi bi-envelope-fill"></i>
                   </div>
                 </animatable-component>
               </div>
               <div class="col align-self-center">
-                <p>{{ email }}</p>
+                <p class="mb-0">
+                  <a class="text-decoration-none" :href="'mailto:' + email">{{ email }}</a>
+                </p>
               </div>
             </div>
             <div class="row mt-5 me-5">
@@ -95,18 +96,17 @@
                 <p class="title">Links</p>
               </div>
             </div>
-            <div class="row record me-4" v-for="l in links">
+            <div class="row record me-4" v-for="l in links" :key="l.link + l.label">
               <div class="col-auto bullet mb-5">
-                <i class="bi bi-record-circle"></i>
+                <i class="bi bi-record-circle" aria-hidden="true"></i>
               </div>
               <div class="col">
                 <p>
                   <a
                     class="text-reset"
+                    :href="l.link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    v-bind:href.prop="l.link"
-                    @click.prevent="openInNewWindow(l.link)"
                   >
                     {{ l.label }}
                   </a>
@@ -121,7 +121,7 @@
             <div class="row">
               <div class="col">
                 <ul class="ms-2 skills-list">
-                  <li class="pb-2" v-for="skill in skills">
+                  <li class="pb-2" v-for="(skill, i) in skills" :key="'skill-' + i">
                     {{ skill }}
                   </li>
                 </ul>
@@ -132,24 +132,23 @@
                 <p class="title">Certifications</p>
               </div>
             </div>
-            <div class="row record" v-for="c in certifications">
+            <div class="row record" v-for="(c, i) in certifications" :key="'cert-' + i">
               <div class="col-auto bullet">
-                <i class="bi bi-record-circle"></i>
+                <i class="bi bi-record-circle" aria-hidden="true"></i>
               </div>
               <div class="col">
                 <p class="fw-bold">
                   {{ c.degree }}
                 </p>
                 <p class="fw-bold">
-                  {{ c.school }}, {{ c.graduationDate }}
+                  {{ [c.school, c.graduationDate].filter(Boolean).join(', ') }}
                 </p>
                 <p v-if="c.certificateLink">
                   <a
                     class="text-reset"
+                    :href="c.certificateLink"
                     target="_blank"
                     rel="noopener noreferrer"
-                    v-bind:href.prop="c.certificateLink"
-                    @click.prevent="openInNewWindow(c.certificateLink)"
                   >
                     {{ c.description }}
                   </a>
@@ -162,22 +161,22 @@
                 <p class="title">Education</p>
               </div>
             </div>
-            <div class="row record" v-for="e in education">
+            <div class="row record" v-for="(e, i) in education" :key="'edu-' + i">
               <div class="col-auto bullet">
-                <i class="bi bi-record-circle"></i>
+                <i class="bi bi-record-circle" aria-hidden="true"></i>
               </div>
               <div class="col">
                 <p class="fw-bold">
                   {{ e.degree }}
                 </p>
                 <p class="fw-bold">
-                  {{ e.school }}, {{ e.graduationDate }}
+                  {{ [e.school, e.graduationDate].filter(Boolean).join(', ') }}
                 </p>
                 <p>{{ e.description }}</p>
               </div>
             </div>
           </div>
-          <div class="col col-8">
+          <div class="col-12 col-lg-8 cv-main-column">
             <animatable-component
               autoplay
               animation="fade-in-right"
@@ -185,13 +184,13 @@
               duration="1200"
             >
               <div class="row bullet">
-              <div class="col-auto pt-2">
-                <i class="bi bi-circle-fill"></i>
+                <div class="col-auto pt-2">
+                  <i class="bi bi-circle-fill" aria-hidden="true"></i>
+                </div>
+                <div class="col">
+                  <p class="title">About me</p>
+                </div>
               </div>
-              <div class="col">
-                <p class="title">About me</p>
-              </div>
-            </div>
             </animatable-component>
             <animatable-component
               autoplay
@@ -200,25 +199,25 @@
               duration="1200"
             >
               <div class="row record bullet">
-              <div class="col-auto">
-                <i class="bi bi-record-circle"></i>
+                <div class="col-auto">
+                  <i class="bi bi-record-circle" aria-hidden="true"></i>
+                </div>
+                <div class="col">
+                  <p class="cv-text-preline">{{ professionalSummary }}</p>
+                </div>
               </div>
-              <div class="col">
-                <p style="white-space: pre-line;">{{ professionalSummary }}</p>
-              </div>
-            </div>
             </animatable-component>
             <div class="row mt-5">
               <div class="col-auto bullet pt-2">
-                <i class="bi bi-circle-fill"></i>
+                <i class="bi bi-circle-fill" aria-hidden="true"></i>
               </div>
               <div class="col">
                 <p class="title">Work experience</p>
               </div>
             </div>
-            <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
+            <div class="row record mb-4 bullet" v-for="(employment, i) in employmentHistory" :key="'job-' + i">
               <div class="col-auto">
-                <i class="bi bi-record-circle"></i>
+                <i class="bi bi-record-circle" aria-hidden="true"></i>
               </div>
               <div class="col">
                 <p class="fw-bold position-relative">
@@ -229,7 +228,7 @@
                   {{ employment.employer }}, {{ employment.city }}
                 </p>
                 <ul class="ms-3 mb-0 achievements-list">
-                  <li v-for="achievement in employment.achievements" class="pb-1">
+                  <li v-for="(achievement, j) in employment.achievements" :key="'ach-' + i + '-' + j" class="pb-1">
                     {{ achievement }}
                   </li>
                 </ul>
@@ -237,10 +236,11 @@
             </div>
           </div>
         </div>
-      </section>
-    </section>
-    
+      </div>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="./data/resume.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

@@ -55,7 +55,7 @@ async function run() {
       `
     });
 
-    await page.waitForTimeout(1200);
+    await new Promise((resolve) => setTimeout(resolve, 1200));
 
     const app = await page.$('#app');
     if (!app) {

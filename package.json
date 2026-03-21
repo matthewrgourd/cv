@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "generate-pdf": "node generate-pdf.js"
+    "generate-pdf": "node generate-pdf.js",
+    "preview": "npx --yes serve . -l 5173"
   },
   "devDependencies": {
     "puppeteer": "^20.8.0"
