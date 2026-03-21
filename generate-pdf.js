@@ -3,6 +3,24 @@ const path = require('path');
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
+/** Prefer env, then common macOS browser paths, when bundled Chromium is missing. */
+function resolveChromeExecutable() {
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) {
+    return process.env.PUPPETEER_EXECUTABLE_PATH;
+  }
+  const candidates = [
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Chromium.app/Contents/MacOS/Chromium',
+    '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
+  ];
+  for (const p of candidates) {
+    if (fs.existsSync(p)) {
+      return p;
+    }
+  }
+  return undefined;
+}
+
 async function run() {
   const root = path.resolve(__dirname);
   const indexPath = path.join(root, 'index.html');
@@ -14,9 +32,11 @@ async function run() {
   const output = process.argv[2] || path.join(root, 'Matthew-Gourd.pdf');
   const htmlInput = process.argv[3] ? path.resolve(process.argv[3]) : indexPath;
 
+  const executablePath = resolveChromeExecutable();
   const browser = await puppeteer.launch({
     headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    ...(executablePath ? { executablePath } : {}),
   });
 
   try {
@@ -52,7 +72,7 @@ async function run() {
           padding-left: 0 !important;
           padding-right: 0 !important;
         }
-      `
+      `,
     });
 
     await new Promise((resolve) => setTimeout(resolve, 1200));
@@ -63,10 +83,10 @@ async function run() {
     }
 
     const clip = await page.evaluate(() => {
-      const app = document.querySelector('#app');
-      if (!app) return null;
+      const appEl = document.querySelector('#app');
+      if (!appEl) return null;
       const rects = [];
-      app.querySelectorAll('*').forEach((el) => {
+      appEl.querySelectorAll('*').forEach((el) => {
         const style = window.getComputedStyle(el);
         if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) === 0) return;
         const r = el.getBoundingClientRect();
@@ -74,16 +94,16 @@ async function run() {
         rects.push({ left: r.left, top: r.top, right: r.right, bottom: r.bottom });
       });
       if (!rects.length) return null;
-      const minLeft = Math.min(...rects.map(r => r.left));
-      const minTop = Math.min(...rects.map(r => r.top));
-      const maxRight = Math.max(...rects.map(r => r.right));
-      const maxBottom = Math.max(...rects.map(r => r.bottom));
+      const minLeft = Math.min(...rects.map((r) => r.left));
+      const minTop = Math.min(...rects.map((r) => r.top));
+      const maxRight = Math.max(...rects.map((r) => r.right));
+      const maxBottom = Math.max(...rects.map((r) => r.bottom));
       const pad = 24;
       return {
         x: Math.max(0, minLeft - pad),
         y: Math.max(0, minTop - pad),
         width: Math.ceil(maxRight - minLeft + pad * 2),
-        height: Math.ceil(maxBottom - minTop + pad * 2)
+        height: Math.ceil(maxBottom - minTop + pad * 2),
       };
     });
 
@@ -93,7 +113,7 @@ async function run() {
 
     const pngBuffer = await page.screenshot({
       type: 'png',
-      clip
+      clip,
     });
 
     const pxPerIn = 96;
@@ -107,8 +127,13 @@ async function run() {
     const pdfHeightIn = pdfHeightPx / pxPerIn;
 
     const pdfPage = await browser.newPage();
-    await pdfPage.setViewport({ width: Math.ceil(pdfWidthPx), height: Math.ceil(Math.min(pdfHeightPx, 4000)), deviceScaleFactor: 1 });
-    await pdfPage.setContent(`<!DOCTYPE html>
+    await pdfPage.setViewport({
+      width: Math.ceil(pdfWidthPx),
+      height: Math.ceil(Math.min(pdfHeightPx, 4000)),
+      deviceScaleFactor: 1,
+    });
+    await pdfPage.setContent(
+      `<!DOCTYPE html>
 <html>
 <head>
   <style>
@@ -147,7 +172,9 @@ async function run() {
     <img src="data:image/png;base64,${pngBuffer.toString('base64')}" alt="CV">
   </div>
 </body>
-</html>`, { waitUntil: 'load' });
+</html>`,
+      { waitUntil: 'load' },
+    );
 
     await pdfPage.pdf({
       path: output,
@@ -156,7 +183,7 @@ async function run() {
       printBackground: true,
       margin: { top: '0in', bottom: '0in', left: '0in', right: '0in' },
       preferCSSPageSize: true,
-      pageRanges: '1'
+      pageRanges: '1',
     });
 
     await pdfPage.close();

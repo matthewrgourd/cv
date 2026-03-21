@@ -2,7 +2,7 @@
 
 Matthew Gourd's CV as static HTML, with a local Puppeteer-based PDF export.
 
-Layout and animation patterns are based on [this CodePen template](https://codepen.io/itsmesuraj20/pen/NWEwXOp) (Vue 2, Bootstrap 5, `@proyecto26/animatable-component`). This repo refactors that structure for maintainability and common web best practices (semantic HTML, `ignoredElements`, progressive enhancement for links, `mailto:` / `tel:`, skip link, reduced motion, data in `data/resume.js`).
+Layout and animation patterns are based on [this CodePen template](https://codepen.io/itsmesuraj20/pen/NWEwXOp) (Vue 2, Bootstrap 5, `@proyecto26/animatable-component`). This repo refactors that structure for maintainability and common web best practices (semantic HTML, `ignoredElements`, progressive enhancement for links, `tel:` for phone, skip link, reduced motion, data in `data/resume.js`).
 
 ## Layout
 
