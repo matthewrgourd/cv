@@ -16,6 +16,9 @@ pnpm-debug.log*
 .env.*
 !.env.example
 
+# Claude Code
+CLAUDE.md
+
 # Editor/OS noise
 .vscode/
 .idea/
